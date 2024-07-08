@@ -1,2 +1,2 @@
 # Devxhouse
-Devxhouse porfolio website build in djano
+Devxhouse porfolio website build in Django
