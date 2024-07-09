@@ -1,0 +1,94 @@
+{% extends 'base.html' %} {% block title %}Contact Us{% endblock title %}
+
+{% block body %}
+
+
+<div class="contact_sec">
+    <div class="container pt-5 justify-content-end h-100">
+        <div class="row pt-4 h-100">
+            <div class="col-md-7 h-100 text">
+                <h1>Contact us</h1>
+                <br>
+
+            </div>
+            <div class="col-md-5 bg-light text-dark pe-0 information">
+                <div class="pb-3">
+                    <b>
+                            <h4>Contact Form</h4>
+
+                        </b>
+
+                </div>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="me-4 ms-2">
+                        <div class="col-md-12 contact-info">
+                            <li class="p-0 m-0 d-inline">Name</li>
+                            <input type="text" class=" name" name="name" id="name">
+                        </div>
+                        <br>
+                        <div class="col-md-12 contact-info">
+                            <li class="p-0 m-0 d-inline">E-mail</li>
+                            <input type="email" class=" email" name="email" id="email">
+                        </div>
+                        <br>
+                        <div class="col-md-12 contact-info">
+                            <li class="p-0 m-0 d-inline">Subject</li>
+                            <input type="text" class=" subject" name="subject" id="subject">
+                        </div>
+                        <br>
+                        <div class="col-md-12 contact-info">
+                            <li class="p-0 m-0 d-inline">Message</li>
+                            <input type="text" class=" message" id="message" name="message">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 text-end  mt-5">
+
+                        <button type="submit" class="btn me-0 bg-dark contact-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="top-sc-01 py-5 text-light bg-dark">
+    <div class="container">
+        <div class="row pt-5 ">
+            <div class="col-md-4">
+                <div class="content">
+                    <p>Our Address</p>
+                    <li>20, Iqbal Stadium</li>
+                    <li>Civil Line</li>
+                    <li>Faisalabad</li>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                    <p>Our Contact</p>
+                <div>
+                    <a class="text-light" href="mailto:contact@devxhouse.com?subject = Feedback&body = Message"
+                        target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                        <li class="d-inline">contact@devxhouse.com</li>
+                    </a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <li class="d-inline">+92 317-0406969</li>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+{% endblock body %}

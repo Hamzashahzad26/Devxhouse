@@ -1,0 +1,280 @@
+{% extends 'base.html' %} {% block title %}Home{% endblock title %}
+{% block body %}
+<main>
+    <section class="sec1 mb-4">
+        <div class="sec1_content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 text-light content">
+                        <div class="sec_text"><b>
+                                <h2>Resoluteness in </h2>
+                                <h1> <span>Programming </span>Arts!</h1>
+                            </b>
+                            <p>We constantly prioritize quality, testing, and on-time delivery in our approach. We refer
+                                to
+                                a wide range of technologies and have a specific process for developmental projects to
+                                accomplish the objectives.</p>
+                        </div>
+                        <!-- <button class="btn sec_button">Contact Us</button> -->
+                        <div class="banner-btn btn">
+                            <a href="/contact"><span></span>Contact Us</a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-1 "> </div>
+                    <div class="col-md-5 col-12 image-container"><img src="/static/images/sec1.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="skills pt-5 pb-5">
+        <div class="container">
+            <div class="row ">
+
+                <div class="col-md-5 col-12 image-container">
+                    <img src="/static/images/sec2.svg" alt="">
+                </div>
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-6 col-12 text-light content">
+                    <h1 class="skills_heading">We Are Increasing Business
+                        Success With Technology</h1>
+                    <br>
+                    <p>We are Increasing Business over 5 years
+                        in IT services Development, Software Application,
+                        Mobile Apps for client all over the world
+                        with technology</p>
+                    <ul class="m-3">
+                        <li class="pb-2">
+                            <h1>WEB DEVELOPMENT</h1>
+                            <div class="box1 mb-3 w-100 "><span class="boxs1"></span></div>
+                        </li>
+                        <li class="pb-2">
+                            <h1>SOFTWARE DEVELOPMENT</h1>
+                            <div class="box2 mb-3 w-100"><span class="boxs2"></span></div>
+                        </li>
+                        <li class="pb-2">
+                            <h1>APP DEVELOPMENT</h1>
+                            <div class="box3 mb-3 w-100"><span class="boxs3"></span></div>
+                        </li>
+                        <li class="pb-2">
+                            <h1>GAME DEVELOPMENT</h1>
+                            <div class="box4 mb-3 w-100"><span class="boxs4"></span></div>
+                        </li>
+                    </ul>
+                    <div class="justify-content-end me-3">
+                        <!-- <button class="btn sec1_button">Learn More</button> -->
+                        <div class="banner-btn btn sec1_button">
+                            <a href="/about"><span></span>Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+    <section class="portfolio_sec pt-3">
+        <div class="container">
+            <div class="pb-5 text-center portfolio_text">
+                <h1>
+                    Our Creative Portfolio
+                </h1>
+            </div>
+
+
+
+            <div id="carousel" class="carousel">
+
+                <div id='item_1' class="hideLeft ">
+                    <img src="/static/images/portfolio/athletewebsite.jpg">
+                </div>
+
+                <div id='item_2' class="prevLeftSecond">
+                    <img src="/static/images/portfolio/car-website.jpg">
+                </div>
+
+                <div id='item_3' class="prev">
+                    <img src="/static/images/portfolio/cybersecurity.jpg">
+                </div>
+
+                <div id='item_4' class="selected">
+                    <img src="/static/images/portfolio/pic2.jpg">
+                </div>
+
+                <div id='item_5' class="next">
+                    <img src="/static/images/portfolio/pic32.jpg">
+                </div>
+
+                <div id='item_6' class="nextRightSecond">
+                    <img src="/static/images/portfolio/portfolio.jpg">
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <button class="button-82-pushable" role="button" id="prev"><span class="button-82-shadow"></span><span
+                        class="button-82-edge"></span><span class="button-82-front text">Previous</span></button>
+
+
+                <button class="button-82-pushable" role="button" id="next"><span class="button-82-shadow"></span><span
+                        class="button-82-edge"></span><span class="button-82-front text">Next</span></button>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section>
+        <div>
+            <a href="https://tools.devxhouse.com/" target="_blank" >
+            <img  style="width: 100%;" src="/static/images/Purple.png" alt="">
+           </a>
+        </div>
+    </section>
+
+    <section class="services mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="text-light text-center services_text">
+                    <h1>Our Services</h1>
+                    <p>We Are Offering All Kind of <br>
+                        Tech Solution Services</p>
+                </div>
+                <div class="justify-content-center row">
+                    <div class=" wtf m-3 col-sm-5 col-lg-3">
+                        <div class="item card">
+                            <div class=" front px-5"> <img src="/static/images/cloud.svg" alt="">
+                                <p>Game Development</p>
+                            </div>
+                            <div class="back"><img
+                                    src="/static/images/service/4695802.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" wtf m-3 col-sm-5 col-lg-3">
+                        <div class="item card">
+                            <div class=" front px-5"> <img src="/static/images/mobile-app.svg" alt="">
+                                <p>App Development</p>
+                            </div>
+                            <div class="back"><img
+                                    src="/static/images/service/mobileapp.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" wtf m-3 col-sm-5 col-lg-3">
+                        <div class="item card">
+                            <div class=" front px-5"> <img src="/static/images/programming.svg" alt="">
+                                <p>Web Development</p>
+                            </div>
+                            <div class="back"><img
+                                    src="/static/images/service/465636-PFZWE7-931.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" wtf m-3 col-sm-5 col-lg-3">
+                        <div class="item card">
+                            <div class=" front px-5"> <img src="/static/images/web-design.svg" alt="">
+                                <p>Graphic Designing</p>
+                            </div>
+                            <div class="back"><img
+                                    src="/static/images/service/2mobileapp.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" wtf m-3 col-sm-5 col-lg-3">
+                        <div class="item card">
+                            <div class=" front px-5"> <img src="/static/images/designer.svg" alt="">
+                                <p>UI/UX Designing</p>
+                            </div>
+                            <div class="back"><img
+                                    src="/static/images/service/5765411.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" wtf m-3 col-sm-5 col-lg-3">
+                        <div class="item card">
+                            <div class=" front px-5"> <img src="/static/images/seo.svg" alt="">
+                                <p>SEO</p>
+                            </div>
+                            <div class="back"><img
+                                    src="/static/images/service/296.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact_us">
+        
+        <div class="hi w-100  mt-5 text-center">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <img src="/static/images/footer1.svg" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="/static/images/footer2.svg" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="/static/images/footer3.svg" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="/static/images/footer4.svg" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row contact">
+            <h1 class="text-light text-center footer-head">OUR SATISFIED CLIENT</h1>
+            <div class="col-6 left pb-3">
+                <img class="left" src="/static/images/technical-support1.svg" alt="">
+            </div>
+            <div class="col-12 col-lg-4 contact_text mb-4">
+                <img class="mb-3" src="/static/images/phone_logo.svg" alt=""><span style="color: white;">CALL US 24/7</span>
+                <h5 class="ms-3" style="color: white;">+92 317-0406969</h5>
+
+                <p>Have any Idea or Project in your mind
+                    call us or schedule an appointment.
+                    Our representative will reply you shortly.</p>
+                <div class="banner-btn btn">
+                    <a href="/contact"><span></span>Let’s Talk</a>
+                </div>
+
+            </div>
+            <div class="col-2"></div>
+            <div class=" lower mb-4 col-md-10 justify-content-end">
+                <div class="row pt-4">
+
+                    <div class="col-md-4">
+                        <h1>150+</h1>
+                        <p>Happy Client</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h1>50+</h1>
+                        <p>Companies</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h1>270+</h1>
+                        <p>Project Done</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+      
+    </section>
+
+
+
+
+</main>
+
+{% endblock body %}

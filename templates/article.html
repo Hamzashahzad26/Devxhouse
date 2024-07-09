@@ -1,0 +1,101 @@
+{% extends 'base.html' %} {% block title %}Article{% endblock title %}
+
+{% block body %}
+<style>
+    .featured-image-list {
+        object-fit: cover;
+    }
+</style>
+<div class="container align-item-center pt-5 mt-5">
+    <div class="row">
+        <div class="col-md-8 mx-auto card bg-dark text-white mb-4  mt-3 left  top">
+            <div class="card-body">
+                <h1>{{ post.title }}</h1>
+                <!-- featured image -->
+                <div class="img"><img  class="w-100 mb-3" src=" {{ post.banner.url }} "  alt=""></div>
+                <p class=" text-white">{{ post.author }} | {{ post.create_on }}</p>
+                <p class="card-text ">{{ object.intro | safe }}</p>
+                <div class="img"><img  class="w-100 mb-3" src=" {{ post.image.url }} "  alt=""></div>
+                <p class="card-text ">{{ object.content | safe }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 
+<main class="mt-5 pt-5">
+    <section class="top banner">
+        <div class="title text-center container">
+            <h1>The Power and Versatility of Flutter Development: Unleashing the Future of Mobile Apps</h1>
+
+        </div>
+        <div class="banner-img fixed-width">
+            <img class="img-fluid"
+                src="/static/images/banner-01-bg.png"
+                alt="">
+        </div>
+
+    </section>
+
+
+
+    <section class="article container">
+        <div class="container w-50">
+            <p class=" text-center">
+            <h4>Introduction:</h4>
+            In the ever-evolving landscape of mobile app development, Flutter has emerged as a game-changer,
+            revolutionizing the way apps are built and experienced. Flutter, an open-source UI software
+            development kit (SDK) developed by Google, has gained significant popularity among developers and
+            businesses alike due to its remarkable features and unparalleled flexibility. In this blog article,
+            we will delve into the world of Flutter development, exploring its key strengths, advantages, and
+            why it's considered the future of mobile app development.
+            The Beauty of Flutter:
+            Flutter stands out for its unique architectural design that sets it apart from other frameworks. Its
+            single codebase approach enables developers to create apps for both iOS and Android platforms
+            simultaneously, saving time and resources. By employing a reactive framework, Flutter ensures
+            seamless UI updates, resulting in smooth, visually stunning, and responsive user interfaces.
+            Hot Reload: A Developer's Delight:
+            One of the most beloved features of Flutter is its "Hot Reload" capability. This feature allows
+            developers to view changes in real-time as they code, without needing to restart the app. The
+            ability to instantly see alterations speeds up the development process significantly, making it
+            easier to experiment, iterate, and refine the app's appearance and functionality.
+            Rich Set of Widgets:
+            Flutter offers an extensive collection of pre-designed widgets that simplify and accelerate the
+            app-building process. Whether it's buttons, text fields, animations, or more complex elements,
+            Flutter's widget library provides a wide range of customizable components to create visually
+            appealing and interactive user interfaces.
+            Native Performance with Dart:
+            Under the hood, Flutter uses Dart, a modern and easy-to-learn programming language developed by
+            Google. Dart compiles directly to native code, ensuring that Flutter apps perform exceptionally
+            well, without sacrificing speed or efficiency. This native performance gives Flutter apps an edge
+            over hybrid frameworks, delivering an unmatched user experience.
+            Cross-platform Consistency:
+            Gone are the days when developers had to compromise on UI consistency across different platforms.
+            Flutter's unique rendering engine provides pixel-perfect consistency, ensuring that your app looks
+            and behaves the same way on various devices and operating systems.
+            Growing Community and Ecosystem:
+            Flutter has quickly gained a strong and vibrant community of developers, which has led to the
+            creation of numerous packages, plugins, and tools. This thriving ecosystem makes it easier for
+            developers to integrate complex features and functionalities seamlessly into their apps, saving
+            development time and effort.
+            Ideal for MVPs and Prototypes:
+            For startups and businesses looking to validate their app ideas quickly, Flutter is an ideal choice.
+            Its rapid development capabilities, combined with its cross-platform nature, make it a perfect
+            framework for building Minimum Viable Products (MVPs) and prototypes, allowing businesses to gather
+            valuable feedback and iterate efficiently.
+            Conclusion:
+            As technology advances, mobile app development must keep pace with changing user demands and market
+            trends. Flutter's innovative approach to app development, with its single codebase, hot reload, rich
+            widgets, and native performance, has transformed the app development landscape. Whether you're a
+            seasoned developer or a business owner with a vision for a mobile app, Flutter presents an
+            unparalleled opportunity to create stunning, powerful, and high-performing applications. By
+            harnessing the potential of Flutter development, businesses can carve their niche in the competitive
+            app market and unleash the future of mobile applications.
+            </p>
+        </div>
+    </section>
+</main> -->
+
+{% endblock body %}

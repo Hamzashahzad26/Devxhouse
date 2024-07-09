@@ -1,0 +1,115 @@
+{% extends 'base.html' %} {% block title %}Blog{% endblock title %}
+
+{% block body %}
+
+
+<style>
+.textp{
+    color: #672665;
+}
+</style>
+
+    <main >
+        <section class="mt-5 pt-5">
+            <div class="container">
+                <div class="row">
+                  <!-- Blog Entries Column -->
+                  <div class="col-md-6 mt-3">
+                    {% for post in post_list %}
+                    <div class="card mb-4 text-white bg-dark">
+                      <div class="card-body">
+                          <div class="img"><img  class="w-100 mb-3" src=" {{ post.banner.url }} "  alt=""></div>
+                          <h2 class="card-title">{{ post.title }}</h2>
+                        <p class="card-text text-white  h6">{{ post.author }} | {{ post.create_on}} </p>
+                        <p class="card-text d-inline">{{post.content|slice:":150"}}</p>
+                        <a href="{% url 'article' post.slug  %}" class="textp d-inline"><b>Read More</b></a>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- <section class="blog mt-5 pt-5 ms-5">
+            <div class="content1">
+                <div class="contaier">
+                    <div class="text-center">
+                    <h1 class="heading">Blogs Page</h1>
+                    </div>
+                    <div class="row">
+                        <a href="/article">
+                            <div class="scol1">
+                                <div class="img-content">
+                                    <p><b>How to Drive a Car Safely</b>
+                                    <br>Ah, the joy of the open road—it’s a good feeling. But if you’re new to driving, you
+                                        may feel a little nervous about getting behind the wheel. Don’t worry. While it’s
+                                        true that accidents can happen to anybody, there are things you can do to drive
+                                        safely and do your best to avoid them. </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="scol1 ms-4">
+                            <div class="img-content">
+                                <p><b>How to Drive a Car Safely</b> 
+                                    <br>Ah, the joy of the open road—it’s a good feeling. But if you’re new to driving, you
+                                    may feel a little nervous about getting behind the wheel. Don’t worry. While it’s
+                                    true that accidents can happen to anybody, there are things you can do to drive
+                                    safely and do your best to avoid them. </p>
+                            </div>
+                        </div>
+                        <div class="rdpro ms-4">
+                            <div class="img-content">
+                                <p><b>How to Drive a Car Safely</b> 
+                                    <br>Ah, the joy of the open road—it’s a good feeling. But if you’re new to driving, you
+                                    may feel a little nervous about getting behind the wheel. Don’t worry. While it’s
+                                    true that accidents can happen to anybody, there are things you can do to drive
+                                    safely and do your best to avoid them. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="blog mt-3 ms-5">
+            <div class="content1">
+                <div class="contaier">
+                    <div class="row">
+                        <div class="rdpro me-4">
+                            <div class="img-content">
+                                <p><b>How to Drive a Car Safely</b> 
+                                    <br>Ah, the joy of the open road—it’s a good feeling. But if you’re new to driving, you
+                                    may feel a little nervous about getting behind the wheel. Don’t worry. While it’s
+                                    true that accidents can happen to anybody, there are things you can do to drive
+                                    safely and do your best to avoid them. </p>
+                            </div>
+                        </div>
+                        <div class="scol1">
+                            <div class="img-content">
+                                <p><b>How to Drive a Car Safely</b>
+                                <br>Ah, the joy of the open road—it’s a good feeling. But if you’re new to driving, you
+                                    may feel a little nervous about getting behind the wheel. Don’t worry. While it’s
+                                    true that accidents can happen to anybody, there are things you can do to drive
+                                    safely and do your best to avoid them. </p>
+                            </div>
+                        </div>
+                        <div class="scol1 ms-4">
+                            <div class="img-content">
+                                <p><b>How to Drive a Car Safely</b> 
+                                    <br>Ah, the joy of the open road—it’s a good feeling. But if you’re new to driving, you
+                                    may feel a little nervous about getting behind the wheel. Don’t worry. While it’s
+                                    true that accidents can happen to anybody, there are things you can do to drive
+                                    safely and do your best to avoid them. </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+
+{% endblock body %}
